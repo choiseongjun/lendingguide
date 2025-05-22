@@ -5,6 +5,17 @@ export default function Home() {
     <main>
       {/* 히어로 섹션 */}
       <section className="hero-section">
+        <div className="hero-background">
+          <Image
+            src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+            alt="Hero background"
+            fill
+            priority
+            quality={100}
+            style={{ objectFit: "cover" }}
+          />
+          <div className="hero-overlay" />
+        </div>
         <div className="container text-center hero-content">
           <h1 className="display-4 mb-4">
             당신의 일상이 누군가에겐 여행이 됩니다
