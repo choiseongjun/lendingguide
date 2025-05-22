@@ -24,35 +24,77 @@ export default function Home() {
           <h2 className="section-title">
             누구나, 자격 없이 시작하는 로컬 여행 가이드
           </h2>
-          <div className="row">
-            <div className="col-md-6">
-              <div className="feature-card">
+          <div className="row g-4">
+            <div className="col-lg-6">
+              <div className="feature-card h-100">
                 <h4 className="mb-4">자격증 필요 없음</h4>
                 <p className="mb-3">동네 산책, 시장 투어, 맛집 코스 모두 OK</p>
                 <p>내가 만든 코스로 수익 창출까지!</p>
+                <div className="mt-4">
+                  <div className="row g-3">
+                    <div className="col-6">
+                      <div className="guide-image-wrapper">
+                        <Image
+                          src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3"
+                          className="guide-image"
+                          alt="카페 투어"
+                          width={300}
+                          height={200}
+                        />
+                        <span className="guide-image-caption">카페 투어</span>
+                      </div>
+                    </div>
+                    <div className="col-6">
+                      <div className="guide-image-wrapper">
+                        <Image
+                          src="https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixlib=rb-4.0.3"
+                          className="guide-image"
+                          alt="시장 투어"
+                          width={300}
+                          height={200}
+                        />
+                        <span className="guide-image-caption">시장 투어</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className="col-md-6">
-              <div className="row">
-                <div className="col-6">
-                  <Image
-                    src="https://images.unsplash.com/photo-1517154421773-0529f29ea451?ixlib=rb-4.0.3"
-                    className="course-image"
-                    alt="망원시장 데이트 코스"
-                    width={300}
-                    height={250}
-                  />
-                  <p className="text-center">망원시장 데이트 코스</p>
+            <div className="col-lg-6">
+              <div className="row g-4">
+                <div className="col-md-6">
+                  <div className="guide-image-wrapper large">
+                    <Image
+                      src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3"
+                      className="guide-image"
+                      alt="맛집 투어"
+                      width={400}
+                      height={300}
+                    />
+                    <span className="guide-image-caption">맛집 투어</span>
+                  </div>
                 </div>
-                <div className="col-6">
-                  <Image
-                    src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3"
-                    className="course-image"
-                    alt="홍대 빈티지+디저트 탐방"
-                    width={300}
-                    height={250}
-                  />
-                  <p className="text-center">홍대 빈티지+디저트 탐방</p>
+                <div className="col-md-6">
+                  <div className="guide-image-wrapper">
+                    <Image
+                      src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-4.0.3"
+                      className="guide-image"
+                      alt="빈티지 쇼핑"
+                      width={300}
+                      height={200}
+                    />
+                    <span className="guide-image-caption">빈티지 쇼핑</span>
+                  </div>
+                  <div className="guide-image-wrapper mt-4">
+                    <Image
+                      src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?ixlib=rb-4.0.3"
+                      className="guide-image"
+                      alt="문화 투어"
+                      width={300}
+                      height={200}
+                    />
+                    <span className="guide-image-caption">문화 투어</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -65,20 +107,83 @@ export default function Home() {
         <div className="container">
           <h2 className="section-title">가이드가 되면 좋은 점</h2>
           <div className="row justify-content-center">
-            <div className="col-md-8">
+            <div className="col-lg-10">
               <div className="feature-card">
-                <h4 className="mb-4">
-                  💡 나만의 일상을 콘텐츠로 바꾸는 가장 쉬운 방법
-                </h4>
-                <ul className="feature-list list-unstyled">
-                  <li>내가 설정한 코스, 내가 정한 요금</li>
-                  <li>한 명만 참여해도 운영 가능</li>
-                  <li>플랫폼이 예약 관리 및 결제 지원</li>
-                  <li>내가 호스팅한 만큼 수익이 쌓인다!</li>
-                </ul>
-                <p className="mt-4">
-                  ⏱ 하루 1시간, 주말 2시간만 투자해도 충분해요
-                </p>
+                <div className="row align-items-center">
+                  <div className="col-lg-6">
+                    <div className="benefit-content">
+                      <h4 className="mb-4">
+                        💡 나만의 일상을 콘텐츠로 바꾸는 가장 쉬운 방법
+                      </h4>
+                      <ul className="feature-list list-unstyled">
+                        <li>
+                          <div className="benefit-item">
+                            <div className="benefit-icon">💰</div>
+                            <div className="benefit-text">
+                              <strong>내가 설정한 코스, 내가 정한 요금</strong>
+                              <p>원하는 만큼 수익 창출 가능</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div className="benefit-item">
+                            <div className="benefit-icon">👥</div>
+                            <div className="benefit-text">
+                              <strong>한 명만 참여해도 운영 가능</strong>
+                              <p>소규모로 시작해도 OK</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div className="benefit-item">
+                            <div className="benefit-icon">📱</div>
+                            <div className="benefit-text">
+                              <strong>플랫폼이 예약 관리 및 결제 지원</strong>
+                              <p>복잡한 업무는 우리가 처리</p>
+                            </div>
+                          </div>
+                        </li>
+                        <li>
+                          <div className="benefit-item">
+                            <div className="benefit-icon">📈</div>
+                            <div className="benefit-text">
+                              <strong>내가 호스팅한 만큼 수익이 쌓인다!</strong>
+                              <p>투자한 시간만큼 보상받기</p>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                      <p className="mt-4 time-investment">
+                        ⏱ 하루 1시간, 주말 2시간만 투자해도 충분해요
+                      </p>
+                    </div>
+                  </div>
+                  <div className="col-lg-6">
+                    <div className="benefit-image-wrapper">
+                      <Image
+                        src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3"
+                        className="benefit-image"
+                        alt="가이드 활동"
+                        width={600}
+                        height={400}
+                      />
+                      <div className="benefit-stats">
+                        <div className="stat-item">
+                          <span className="stat-number">98%</span>
+                          <span className="stat-label">만족도</span>
+                        </div>
+                        <div className="stat-item">
+                          <span className="stat-number">5,000+</span>
+                          <span className="stat-label">활동 가이드</span>
+                        </div>
+                        <div className="stat-item">
+                          <span className="stat-number">10만+</span>
+                          <span className="stat-label">참여자</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
