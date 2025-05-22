@@ -90,11 +90,11 @@ export default function Home() {
                     <Image
                       src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?ixlib=rb-4.0.3"
                       className="guide-image"
-                      alt="빈티지 쇼핑"
+                      alt="파티"
                       width={300}
                       height={200}
                     />
-                    <span className="guide-image-caption">빈티지 쇼핑</span>
+                    <span className="guide-image-caption">파티</span>
                   </div>
                   <div className="guide-image-wrapper mt-4">
                     <Image
