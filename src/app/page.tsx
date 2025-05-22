@@ -2,102 +2,187 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <main>
+      {/* 히어로 섹션 */}
+      <section className="hero-section">
+        <div className="container text-center hero-content">
+          <h1 className="display-4 mb-4">
+            당신의 일상이 누군가에겐 여행이 됩니다
+          </h1>
+          <p className="lead mb-4">
+            동네를 여행지로 만드는 새로운 방법
+            <br />
+            지금, 트립윗미 가이드로 시작해보세요
+          </p>
+          <button className="cta-button">가이드 등록하기</button>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+
+      {/* 섹션 1: 왜 트립윗미인가? */}
+      <section className="section bg-light">
+        <div className="container">
+          <h2 className="section-title">
+            누구나, 자격 없이 시작하는 로컬 여행 가이드
+          </h2>
+          <div className="row">
+            <div className="col-md-6">
+              <div className="feature-card">
+                <h4 className="mb-4">자격증 필요 없음</h4>
+                <p className="mb-3">동네 산책, 시장 투어, 맛집 코스 모두 OK</p>
+                <p>내가 만든 코스로 수익 창출까지!</p>
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="row">
+                <div className="col-6">
+                  <Image
+                    src="https://images.unsplash.com/photo-1517154421773-0529f29ea451?ixlib=rb-4.0.3"
+                    className="course-image"
+                    alt="망원시장 데이트 코스"
+                    width={300}
+                    height={250}
+                  />
+                  <p className="text-center">망원시장 데이트 코스</p>
+                </div>
+                <div className="col-6">
+                  <Image
+                    src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3"
+                    className="course-image"
+                    alt="홍대 빈티지+디저트 탐방"
+                    width={300}
+                    height={250}
+                  />
+                  <p className="text-center">홍대 빈티지+디저트 탐방</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 섹션 2: 가이드가 되면 좋은 점 */}
+      <section className="section">
+        <div className="container">
+          <h2 className="section-title">가이드가 되면 좋은 점</h2>
+          <div className="row justify-content-center">
+            <div className="col-md-8">
+              <div className="feature-card">
+                <h4 className="mb-4">
+                  💡 나만의 일상을 콘텐츠로 바꾸는 가장 쉬운 방법
+                </h4>
+                <ul className="feature-list list-unstyled">
+                  <li>내가 설정한 코스, 내가 정한 요금</li>
+                  <li>한 명만 참여해도 운영 가능</li>
+                  <li>플랫폼이 예약 관리 및 결제 지원</li>
+                  <li>내가 호스팅한 만큼 수익이 쌓인다!</li>
+                </ul>
+                <p className="mt-4">
+                  ⏱ 하루 1시간, 주말 2시간만 투자해도 충분해요
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 섹션 3: 실제 후기 */}
+      <section className="section bg-light">
+        <div className="container">
+          <h2 className="section-title">👥 이런 후기들이 쌓이고 있어요!</h2>
+          <div className="row">
+            <div className="col-md-4">
+              <div className="review-card">
+                <p>"단순한 동네 산책이 이렇게 재밌을 줄이야!"</p>
+                <div className="d-flex align-items-center mt-4">
+                  <Image
+                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3"
+                    className="reviewer-image"
+                    alt="참여자"
+                    width={60}
+                    height={60}
+                  />
+                  <span className="ms-3">익명의 참여자</span>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="review-card">
+                <p>"혼자 사는 동네가 여행지처럼 느껴졌어요"</p>
+                <div className="d-flex align-items-center mt-4">
+                  <Image
+                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3"
+                    className="reviewer-image"
+                    alt="참여자"
+                    width={60}
+                    height={60}
+                  />
+                  <span className="ms-3">익명의 참여자</span>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4">
+              <div className="review-card">
+                <p>"가이드님 덕분에 힐링됐어요. 다음에도 또 하고 싶어요!"</p>
+                <div className="d-flex align-items-center mt-4">
+                  <Image
+                    src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3"
+                    className="reviewer-image"
+                    alt="참여자"
+                    width={60}
+                    height={60}
+                  />
+                  <span className="ms-3">익명의 참여자</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 섹션 4: 등록 방법 */}
+      <section className="section">
+        <div className="container">
+          <h2 className="section-title">🎯 지금 바로 가이드가 되어보세요</h2>
+          <div className="row">
+            <div className="col-md-3 col-sm-6">
+              <div className="step-card">
+                <div className="step-number">1</div>
+                <h5>가이드 등록하기</h5>
+                <p>클릭 한 번으로 시작</p>
+              </div>
+            </div>
+            <div className="col-md-3 col-sm-6">
+              <div className="step-card">
+                <div className="step-number">2</div>
+                <h5>내 동네 코스 작성</h5>
+                <p>사진과 설명 추가</p>
+              </div>
+            </div>
+            <div className="col-md-3 col-sm-6">
+              <div className="step-card">
+                <div className="step-number">3</div>
+                <h5>운영 시간 설정</h5>
+                <p>가능한 요일과 시간 선택</p>
+              </div>
+            </div>
+            <div className="col-md-3 col-sm-6">
+              <div className="step-card">
+                <div className="step-number">4</div>
+                <h5>모집 시작</h5>
+                <p>바로 모집 시작!</p>
+              </div>
+            </div>
+          </div>
+          <div className="text-center mt-5">
+            <p className="mb-4">
+              🔒 플랫폼에서 예약·결제·정산까지 자동 처리
+              <br />
+              🛟 별도 보험이나 허가 없이 시작 가능
+            </p>
+            <button className="cta-button">지금 시작하기</button>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
