@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
   title: "트립윗미 - 당신의 일상이 누군가에겐 여행이 됩니다",
@@ -25,7 +26,9 @@ export default function RootLayout({
         />
       </head>
       <body>
-        {children}
+        <div className="flex flex-col min-h-screen">
+          <main className="flex-1">{children}</main>
+        </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
       </body>
     </html>
