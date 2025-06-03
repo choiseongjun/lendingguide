@@ -9,65 +9,41 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-12 relative bottom-0 w-full">
-      <div className="container mx-auto px-4">
-        <div className="flex justify-between items-start max-w-4xl mx-auto">
-          {/* 회사 정보 */}
-          <div className="w-1/2 pr-12">
-            <h3 className="text-xl font-bold text-blue-400 mb-8">회사 정보</h3>
-            <ul className="space-y-6">
-              <li>
-                <span className="text-gray-400">회사명</span>
-                <p className="text-white mt-1">트윗</p>
-              </li>
-              <li>
-                <span className="text-gray-400">대표이사</span>
-                <p className="text-white mt-1">최성준</p>
-              </li>
-              <li>
-                <span className="text-gray-400">사업자등록번호</span>
-                <p className="text-white mt-1">880-05-02957</p>
-              </li>
-              <li>
-                <span className="text-gray-400">주소</span>
-                <p className="text-white mt-1">
-                  서울시 동작구 상도동 211-114 201호
-                </p>
-              </li>
-              <li>
-                <span className="text-gray-400">이메일</span>
-                <p className="text-white mt-1">tripcsj2702@gmail.com</p>
-              </li>
-            </ul>
-          </div>
-
-          {/* 고객센터 정보 */}
-          <div className="w-1/2 pl-12">
-            <h3 className="text-xl font-bold text-blue-400 mb-8">고객센터</h3>
-            <ul className="space-y-6">
-              <li>
-                <span className="text-gray-400">운영시간</span>
-                <p className="text-white mt-1">평일 10:00 - 18:00</p>
-              </li>
-              <li>
-                <span className="text-gray-400">점심시간</span>
-                <p className="text-white mt-1">12:00 - 13:00</p>
-              </li>
-              <li>
-                <span className="text-gray-400">휴무일</span>
-                <p className="text-white mt-1">주말 및 공휴일</p>
-              </li>
-            </ul>
-          </div>
+    <footer className="bg-dark text-white py-5 mt-5">
+    <div className="container">
+      <div className="row">
+        <div className="col-md-6">
+          <h4 className="text-white mb-4 fw-semibold">회사 정보</h4>
+          <ul className="list-unstyled">
+            <li className="mb-2">회사명: 트윗</li>
+            <li className="mb-2">대표이사: 최성준</li>
+            <li className="mb-2">사업자등록번호: 880-05-02957</li>
+            <li className="mb-2">주소: 서울시 동작구 상도동 211-114 201호</li>
+            <li className="mb-2">이메일: tripcsj2702@gmail.com</li>
+          </ul>
         </div>
-
-        <div className="mt-16 pt-8 border-t border-gray-800 text-center">
-          <p className="text-gray-400">
-            &copy; {new Date().getFullYear()} 트윗. All rights reserved.
-          </p>
+        <div className="col-md-6">
+          <h4 className="text-white mb-4 fw-semibold">고객센터 정보</h4>
+          <ul className="list-unstyled">
+            <li className="mb-2">
+              <span className="text-secondary">운영시간:</span> 평일 10:00 - 18:00
+            </li>
+            <li className="mb-2">
+              <span className="text-secondary">점심시간:</span> 12:00 - 13:00
+            </li>
+            <li className="mb-2">
+              <span className="text-secondary">휴무일:</span> 주말 및 공휴일
+            </li>
+          </ul>
         </div>
       </div>
-    </footer>
+      <div className="row mt-4">
+        <div className="col-12 text-center border-top border-secondary pt-4 mt-4">
+          <p className="text-secondary mb-0">© 2025 트윗. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
   );
 };
 
